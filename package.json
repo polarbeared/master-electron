@@ -17,8 +17,11 @@
   "author": "GitHub, Stackacademytv",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^9.0.0",
+    "electron": "^11.0.0",
+    "electron-rebuild": "^3.2.7",
     "nodemon": "^2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "windowbar": "^1.7.4"
+  }
 }

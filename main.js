@@ -1,6 +1,6 @@
 // Modules
 const {app, BrowserWindow} = require('electron')
-
+// const test = require('electron-titlebar')
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
@@ -9,7 +9,8 @@ let mainWindow
 function createWindow () {
 
   mainWindow = new BrowserWindow({
-    width: 1000, height: 800,
+    width: 400, height: 600,
+    titleBarStyle: 'hiddenInset',
     webPreferences: {
       // --- !! IMPORTANT !! ---
       // Disable 'contextIsolation' to allow 'nodeIntegration'
@@ -22,7 +23,7 @@ function createWindow () {
   // Load index.html into the new BrowserWindow
   mainWindow.loadFile('index.html')
 
-  // Open DevTools - Remove for PRODUCTION!
+  // // Open DevTools - Remove for PRODUCTION!
   mainWindow.webContents.openDevTools();
 
   // Listen for window being closed
